@@ -12,20 +12,21 @@
 ---
 ## Indice Navigabile
 
-- [Come usare questo glossario](#come-usare-questo-glossario)
-- [Indice Navigabile](#indice-navigabile)
-- [PROTOCOLLO E PACCHETTI](#protocollo-e-pacchetti)
-- [COMUNICAZIONE SERIALE (RS-232/422)](#comunicazione-seriale-rs-232422)
-- [COMUNICAZIONE IP (VISCA over IP)](#comunicazione-ip-visca-over-ip)
-- [MESSAGGI DI RISPOSTA E STATI](#messaggi-di-risposta-e-stati)
-- [GESTIONE SOCKET](#gestione-socket)
-- [COMANDI E PARAMETRI](#comandi-e-parametri)
-- [DATI POSIZIONALI E NIBBLE PARTING](#dati-posizionali-e-nibble-parting)
-- [SVILUPPO SOFTWARE](#sviluppo-software)
-- [RETI E VPN](#reti-e-vpn)
-- [HARDWARE E FISICO](#hardware-e-fisico)
-- [TERMINI OPERATIVI](#termini-operativi)
-- [NOTAZIONI E CONVENZIONI](#notazioni-e-convenzioni)
+- [Glossario Tecnico VISCA](#glossario-tecnico-visca)
+  - [Come usare questo glossario](#come-usare-questo-glossario)
+  - [Indice Navigabile](#indice-navigabile)
+  - [PROTOCOLLO E PACCHETTI](#protocollo-e-pacchetti)
+  - [COMUNICAZIONE SERIALE (RS-232/422)](#comunicazione-seriale-rs-232422)
+  - [COMUNICAZIONE IP (VISCA over IP)](#comunicazione-ip-visca-over-ip)
+  - [MESSAGGI DI RISPOSTA E STATI](#messaggi-di-risposta-e-stati)
+  - [GESTIONE SOCKET](#gestione-socket)
+  - [COMANDI E PARAMETRI](#comandi-e-parametri)
+  - [DATI POSIZIONALI E NIBBLE PARTING](#dati-posizionali-e-nibble-parting)
+  - [SVILUPPO SOFTWARE](#sviluppo-software)
+  - [RETI E VPN](#reti-e-vpn)
+  - [HARDWARE E FISICO](#hardware-e-fisico)
+  - [TERMINI OPERATIVI](#termini-operativi)
+  - [NOTAZIONI E CONVENZIONI](#notazioni-e-convenzioni)
 
 ---
 ## PROTOCOLLO E PACCHETTI
@@ -186,5 +187,3 @@
 | **Big Endian**  | Ordine byte MSB primo   | VISCA usa Big Endian.                                   |
 | **Hex**         | Esadecimale             | Base 16. Prefisso `0x` o suffisso `h`. Es: `FFh` = 255. |
 | **0p 0q 0r 0s** | Pattern nibble          | Ogni cifra = 4 bit, preceduta da 0. Es: `0A 0B 0C 0D`   |
-
----
