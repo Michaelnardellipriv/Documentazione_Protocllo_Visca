@@ -128,50 +128,50 @@
 
 ## SVILUPPO SOFTWARE
 
-| Termine                | Definizione         | Contesto                                                                   | Vedi anche                  |
-| ---------------------- | ------------------- | -------------------------------------------------------------------------- | --------------------------- |
-| **Protocol Handshake** | Validazione 3-step  | 1. Ping, 2. Port scan, 3. Inquiry Version. Previene falsi positivi.        | [Guida_allo_Sviluppo](Guida_allo_Sviluppo_di_un_Controller_VISCA.md#validazione-del-dispositivo-protocol-handshake) |
-| **Self-Healing**       | Recupero automatico | Tracciamento MAC → riassociazione IP dopo cambio DHCP.                     | [Guida_allo_Sviluppo](Guida_allo_Sviluppo_di_un_Controller_VISCA.md#strategia-self-healing-tracciamento-mac-address) |
-| **Adaptive Timeout**   | Timeout variabile   | Regolato dinamicamente su RTT misurato. Previene ritrasmissioni premature. | —                           |
-| **Command Queue**      | Coda comandi        | Pattern producer-consumer per gestire buffer full.                         | [Guida_allo_Sviluppo](Guida_allo_Sviluppo_di_un_Controller_VISCA.md#architettura-a-due-code-gestione-socket) |
-| **State Machine**      | Macchina a stati    | Gestisce transizioni IDLE → WAITING_ACK → EXECUTING → COMPLETE             | [Guida_allo_Sviluppo](Guida_allo_Sviluppo_di_un_Controller_VISCA.md#architettura-a-due-code-gestione-socket) |
+| Termine                | Definizione         | Contesto                                                                   | Vedi anche                  | Wikipedia |
+| ---------------------- | ------------------- | -------------------------------------------------------------------------- | --------------------------- | --------- |
+| **Protocol Handshake** | Validazione 3-step  | 1. Ping, 2. Port scan, 3. Inquiry Version. Previene falsi positivi.        | [Guida_allo_Sviluppo](Guida_allo_Sviluppo_di_un_Controller_VISCA.md#validazione-del-dispositivo-protocol-handshake) | [Link](https://it.wikipedia.org/wiki/Handshake) |
+| **Self-Healing**       | Recupero automatico | Tracciamento MAC → riassociazione IP dopo cambio DHCP.                     | [Guida_allo_Sviluppo](Guida_allo_Sviluppo_di_un_Controller_VISCA.md#strategia-self-healing-tracciamento-mac-address) | — |
+| **Adaptive Timeout**   | Timeout variabile   | Regolato dinamicamente su RTT misurato. Previene ritrasmissioni premature. | —                           | — |
+| **Command Queue**      | Coda comandi        | Pattern producer-consumer per gestire buffer full.                         | [Guida_allo_Sviluppo](Guida_allo_Sviluppo_di_un_Controller_VISCA.md#architettura-a-due-code-gestione-socket) | [Link](https://it.wikipedia.org/wiki/Coda_(struttura_dati)) |
+| **State Machine**      | Macchina a stati    | Gestisce transizioni IDLE → WAITING_ACK → EXECUTING → COMPLETE             | [Guida_allo_Sviluppo](Guida_allo_Sviluppo_di_un_Controller_VISCA.md#architettura-a-due-code-gestione-socket) | [Link](https://it.wikipedia.org/wiki/Macchina_a_stati_finiti) |
 
 ---
 
 ## RETI E VPN
 
-| Termine               | Definizione                 | Contesto                                                              | Vedi anche                                 |
-| --------------------- | --------------------------- | --------------------------------------------------------------------- | ------------------------------------------ |
-| **Jitter**            | Variazione latenza          | Critico per VISCA: >30ms causa pacchetti fuori ordine.                | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) |
-| **MTU**               | _Maximum Transmission Unit_ | Default 1500 byte. Incapsulamento VPN può causare frammentazione.     | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) |
-| **Frammentazione IP** | Split pacchetto > MTU       | Letale per VISCA: perdita 1 frammento = perdita intero comando.       | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) |
-| **NAT Traversal**     | Attraversamento NAT         | Problema: timeout mapping UDP (30-300s). Soluzione: overlay/ZeroTier. | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) |
-| **L2VPN**             | Bridge livello 2            | Estende stesso broadcast domain. Trasparente ma fragile su WAN.       | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) |
-| **L3VPN**             | Routing statico             | Subnet separate. Richiede routing esplicito.                          | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) |
-| **Overlay Network**   | IP virtuale                 | ZeroTier/Tailscale. Più resiliente a cambi IP fisici.                 | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) |
+| Termine               | Definizione                 | Contesto                                                              | Vedi anche                                 | Wikipedia |
+| --------------------- | --------------------------- | --------------------------------------------------------------------- | ------------------------------------------ | --------- |
+| **Jitter**            | Variazione latenza          | Critico per VISCA: >30ms causa pacchetti fuori ordine.                | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) | [Link](https://it.wikipedia.org/wiki/Jitter) |
+| **MTU**               | _Maximum Transmission Unit_ | Default 1500 byte. Incapsulamento VPN può causare frammentazione.     | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) | [Link](https://it.wikipedia.org/wiki/Maximum_transmission_unit) |
+| **Frammentazione IP** | Split pacchetto > MTU       | Letale per VISCA: perdita 1 frammento = perdita intero comando.       | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) | [Link](https://it.wikipedia.org/wiki/Frammentazione_(reti)) |
+| **NAT Traversal**     | Attraversamento NAT         | Problema: timeout mapping UDP (30-300s). Soluzione: overlay/ZeroTier. | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) | [Link](https://it.wikipedia.org/wiki/Network_address_translation) |
+| **L2VPN**             | Bridge livello 2            | Estende stesso broadcast domain. Trasparente ma fragile su WAN.       | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) | — |
+| **L3VPN**             | Routing statico             | Subnet separate. Richiede routing esplicito.                          | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) | — |
+| **Overlay Network**   | IP virtuale                 | ZeroTier/Tailscale. Più resiliente a cambi IP fisici.                 | [VISCA_tramite_vpn](VISCA_tramite_vpn.md) | [Link](https://it.wikipedia.org/wiki/Overlay_network) |
 
 ---
 
 ## HARDWARE E FISICO
 
-| Termine        | Definizione           | Contesto                                          | Vedi anche                                      |
-| -------------- | --------------------- | ------------------------------------------------- | ----------------------------------------------- |
-| **PTZ**        | _Pan-Tilt-Zoom_       | Tipologia telecamera con movimento motorizzato.   | [VISCA_HARDWARE_GUIDE](VISCA_HARDWARE_GUIDE.md) |
-| **RJ-45**      | Connettore Ethernet   | VISCA over IP: pin 1,2,3,6 utilizzati.            | [VISCA_HARDWARE_GUIDE](VISCA_HARDWARE_GUIDE.md) |
-| **PoE**        | _Power over Ethernet_ | Alimentazione via cavo rete. Standard 802.3af/at. | [VISCA_HARDWARE_GUIDE](VISCA_HARDWARE_GUIDE.md) |
-| **DIP Switch** | Interruttori fisici   | Configurazione hardware. Switch 3 = IP enable.    | [VISCA_HARDWARE_GUIDE](VISCA_HARDWARE_GUIDE.md) |
-| **RS-232/422** | Standard seriali      | Vedi sezione 2.                                   | [COME_FUNZIONA_IN_SERIALE](COME_FUNZIONA_IN_SERIALE.md) |
+| Termine        | Definizione           | Contesto                                          | Vedi anche                                      | Wikipedia |
+| -------------- | --------------------- | ------------------------------------------------- | ----------------------------------------------- | --------- |
+| **PTZ**        | _Pan-Tilt-Zoom_       | Tipologia telecamera con movimento motorizzato.   | [VISCA_HARDWARE_GUIDE](VISCA_HARDWARE_GUIDE.md) | [Link](https://it.wikipedia.org/wiki/Pan-tilt-zoom_camera) |
+| **RJ-45**      | Connettore Ethernet   | VISCA over IP: pin 1,2,3,6 utilizzati.            | [VISCA_HARDWARE_GUIDE](VISCA_HARDWARE_GUIDE.md) | [Link](https://it.wikipedia.org/wiki/RJ45) |
+| **PoE**        | _Power over Ethernet_ | Alimentazione via cavo rete. Standard 802.3af/at. | [VISCA_HARDWARE_GUIDE](VISCA_HARDWARE_GUIDE.md) | [Link](https://it.wikipedia.org/wiki/Power_over_Ethernet) |
+| **DIP Switch** | Interruttori fisici   | Configurazione hardware. Switch 3 = IP enable.    | [VISCA_HARDWARE_GUIDE](VISCA_HARDWARE_GUIDE.md) | [Link](https://it.wikipedia.org/wiki/DIP_switch) |
+| **RS-232/422** | Standard seriali      | Vedi sezione 2.                                   | [COME_FUNZIONA_IN_SERIALE](COME_FUNZIONA_IN_SERIALE.md) | [Link](https://it.wikipedia.org/wiki/EIA_RS-232) |
 
 ---
 
 ## TERMINI OPERATIVI
 
-| Termine       | Definizione                   | Contesto                                                 |
-| ------------- | ----------------------------- | -------------------------------------------------------- |
-| **Broadcast** | Produzione video live         | Contesto d'uso principale VISCA. Richiede bassa latenza. |
-| **Studio**    | Ambiente controllato          | Cablaggio fisso, preset, movimenti ripetuti.             |
-| **Stadio**    | Lunghe distanze               | Uso RS-422 o IP su fibra. Latenza accettabile <80ms.     |
-| **EFP**       | _Electronic Field Production_ | Produzione in esterna. Spesso VPN o 4G. Sfida per VISCA. |
+| Termine       | Definizione                   | Contesto                                                 | Wikipedia |
+| ------------- | ----------------------------- | -------------------------------------------------------- | --------- |
+| **Broadcast** | Produzione video live         | Contesto d'uso principale VISCA. Richiede bassa latenza. | [Link](https://it.wikipedia.org/wiki/Televisione) |
+| **Studio**    | Ambiente controllato          | Cablaggio fisso, preset, movimenti ripetuti.             | — |
+| **Stadio**    | Lunghe distanze               | Uso RS-422 o IP su fibra. Latenza accettabile <80ms.     | — |
+| **EFP**       | _Electronic Field Production_ | Produzione in esterna. Spesso VPN o 4G. Sfida per VISCA. | — |
 
 ---
 
