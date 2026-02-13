@@ -12,18 +12,20 @@
 ---
 ## Indice Navigabile
 
-[**PROTOCOLLO E PACCHETTI**](#protocollo-e-pacchetti) 
-[**COMUNICAZIONE SERIALE**](#comunicazione-seriale-rs-232422) 
-[**COMUNICAZIONE IP**](#comunicazione-ip-visca-over-ip) 
-[**MESSAGGI DI RISPOSTA**](#messaggi-di-risposta-e-stati) 
-[**GESTIONE SOCKET**](#gestione-socket) 
-[**COMANDI E PARAMETRI**](#comandi-e-parametri)
-[**DATI POSIZIONALI**](#dati-posizionali-e-nibble-parting)
-[**SVILUPPO SOFTWARE**](#sviluppo-software) 
-[**RETI E VPN**](#reti-e-vpn) 
-[**HARDWARE**](#hardware-e-fisico) 
-[**TERMINI OPERATIVI**](#termini-operativi)
-[**NOTAZIONI**](#notazioni-e-convenzioni)
+- [Come usare questo glossario](#come-usare-questo-glossario)
+- [Indice Navigabile](#indice-navigabile)
+- [PROTOCOLLO E PACCHETTI](#protocollo-e-pacchetti)
+- [COMUNICAZIONE SERIALE (RS-232/422)](#comunicazione-seriale-rs-232422)
+- [COMUNICAZIONE IP (VISCA over IP)](#comunicazione-ip-visca-over-ip)
+- [MESSAGGI DI RISPOSTA E STATI](#messaggi-di-risposta-e-stati)
+- [GESTIONE SOCKET](#gestione-socket)
+- [COMANDI E PARAMETRI](#comandi-e-parametri)
+- [DATI POSIZIONALI E NIBBLE PARTING](#dati-posizionali-e-nibble-parting)
+- [SVILUPPO SOFTWARE](#sviluppo-software)
+- [RETI E VPN](#reti-e-vpn)
+- [HARDWARE E FISICO](#hardware-e-fisico)
+- [TERMINI OPERATIVI](#termini-operativi)
+- [NOTAZIONI E CONVENZIONI](#notazioni-e-convenzioni)
 
 ---
 ## PROTOCOLLO E PACCHETTI
