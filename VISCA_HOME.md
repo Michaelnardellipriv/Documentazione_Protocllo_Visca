@@ -11,13 +11,15 @@ Il VISCA (**Video System Control Architecture**) è il protocollo standard indus
 
 1. **Inizia qui** -> Leggi questa introduzione
 
-2. **Fondamenti** -> [Struttura pacchetti](Struttura_del_pacchetto_VISCA.md) -> [Seriale](COME_FUNZIONA_IN_SERIALE.md) -> [IP](VISCA_SOPRA_IP.md)
+2. **Per una configurazione rapida** -> [VISCA Quick Start](VISCA_QUICK_START.md) — muovi una camera in 5 minuti
 
-3. **Sviluppo** -> [Guida sviluppo](Guida_allo_Sviluppo_di_un_Controller_VISCA.md)
+3. **Fondamenti** -> [Struttura pacchetti](Struttura_del_pacchetto_VISCA.md) -> [Seriale](COME_FUNZIONA_IN_SERIALE.md) -> [IP](VISCA_SOPRA_IP.md)
 
-4. **Riferimento** -> [Hardware](VISCA_HARDWARE_GUIDE.md) -> [Integrazione](VISCA%20Software%20Integration%20Guide.md)
+4. **Sviluppo** -> [Guida sviluppo](Guida_allo_Sviluppo_di_un_Controller_VISCA.md)
 
-5. **Risoluzione problemi** -> [Quick Reference](VISCA%20Protocol%20-%20Quick%20Reference%20&%20Troubleshooting%20Guide.md)
+5. **Riferimento** -> [Hardware](VISCA_HARDWARE_GUIDE.md) -> [Integrazione](VISCA%20Software%20Integration%20Guide.md)
+
+6. **Risoluzione problemi** -> [Quick Reference](VISCA%20Protocol%20-%20Quick%20Reference%20&%20Troubleshooting%20Guide.md)
 
 ---
 
